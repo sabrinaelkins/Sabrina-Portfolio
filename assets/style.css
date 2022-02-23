@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3a3028;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.hr {
+  flex-direction: column;
+  height: 55px;
+  width: 1px;
+  background-color: #ffff;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+p {
+  font-size: 24px;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+  /*text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);*/
+}
+
+a:visited{
+  color: #ffff;
+  /*text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);*/
+}
+
+a:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+header {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+}
+
+h1 {
+  padding-top: 5px;
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: #ffff;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffff;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 15px 15px;
+  font-size: 1.55vw;
+}
+
+/* Main Image Styling start */
+
+.responsive {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* Main Image Styling end */
+
+/* About-me Styling start */
+
+summary {
+  margin-top: 15px;
+}
+
+.card img{
+  width: 350px;
+  height: 325px;
+  margin-top: 15px;
+}
+
+.card {
+  color: forestgreen;
+  text-align: left;
+}
+
+.card h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 18px;
+  text-indent: 15px;
+}
+
+/* About-me Styling end */
+
+/* My-work Styling Start */
+.work1 {
+  margin: 0 auto;
+  width: 86%;
+  margin-top: 15px;
+}
+
+.work1 img {
+  max-height: 440px;
+}
+
+.work1 p {
+  position: relative;
+  bottom: 35px;
+  margin-left: 10px;
+  padding: 6px;
+  color: #ffff;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.flex-row2 {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.flex-row2 img {
+  width: 500px;
+  height: 500px;
+}
+
+.flex-row2 p {
+  position: relative;
+  bottom: 500px;
+  margin-left: 10px;
+  padding: 5px;
+  color: #000;
+}
+/* My-work Styling end */
+
+/* Contact-me Styling start */
+#contact-me section {
+margin-top: 15px;
+font-size: 24px;
+text-align: center;
+margin-bottom: 50px;
+}
+/* Contact-me Styling end */
+
+@media screen and (max-width: 700px) {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #574a3f;
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #ffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffff;
+  }
+
+  /* remove the navigation dividers */
+  .hr {
+    display: none;
+  }
+
+  /* make the navigation items bigger */
+  header nav ul li a {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+
+  /* center the navigation bar */
+  nav {
+    margin: 0 auto;
+  }
+
+  /* adjust the size of the picture of myself */
+  .about-me-img img{
+    width: 250px;
+    height: 225px;
+    margin-top: 15px;
+    margin-left: 54px;
+   }
+
+  /* make the about me section text smaller */
+  .card p {
+    font-size: 12px;
+  }
+
+  /* adjust the label for my work section */
+  .flex-row2 p {
+    bottom: 300px;
+  }
+
+  /* adjust the size of my work images */
+  .flex-row2 img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* adjust the size of the click to mail link */
+  #contact-me div {
+    font-size: 18px;
+  }
+}
